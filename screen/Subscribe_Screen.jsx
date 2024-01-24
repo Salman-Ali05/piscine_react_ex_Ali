@@ -1,37 +1,26 @@
-import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
-import { TextInput, Button } from 'react-native-paper';
-import { useNavigation } from '@react-navigation/native';
+import { View, Text, Image, StyleSheet } from 'react-native'
+import React from 'react'
+import { TextInput } from 'react-native-paper';
+import { Button } from 'react-native-paper'
 
-const Connect_Formular = () => {
-    const navigation = useNavigation();
 
-    const handleLogin = () => {
-        navigation.navigate('Dashboard_Screen');
-    };
-
-    const handleSub = () => {
-        navigation.navigate('Subscribe_Screen');
-    };
-
+const Subscribe_Screen = () => {
     return (
         <View style={styles.container}>
             <Image
                 style={styles.logo}
                 source={require('../assets/BeastModoLogo.png')}
             />
-            <Text style={styles.title}>So, wanna connect ?</Text>
-            <TextInput style={styles.inputs} label="Email" placeholder="Your email" />
-            <TextInput style={styles.inputs} label="Password" placeholder="Your password" />
-            <Button style={styles.btn} onPress={handleLogin}>
-                <Text style={styles.txtBtn}>Submit</Text>
-            </Button>
-            <Button style={styles.btn} onPress={handleSub}>
-                <Text style={styles.txtBtn}>Wait, you don't have an account ? Here come here</Text>
-            </Button>
+            <Text style={styles.title}>Wanna subscribe ? Got ya !</Text>
+            <TextInput style={styles.inputs} label='First Name' placeholder='Your first name' />
+            <TextInput style={styles.inputs} label='Last Name' placeholder='Your last name' />
+            <TextInput style={styles.inputs} label='Email' placeholder='Your email' />
+            <TextInput style={styles.inputs} label='Password' placeholder='Your password' />
+            <TextInput style={styles.inputs} label='Confirm Password' placeholder='Your confirm password' />
+            <Button style={styles.btn}><Text style={styles.txtBtn}>Submit</Text></Button>
         </View>
-    );
-};
+    )
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -76,4 +65,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Connect_Formular;
+export default Subscribe_Screen

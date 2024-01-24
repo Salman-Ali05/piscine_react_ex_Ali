@@ -9,7 +9,7 @@ const Formular_Component = () => {
         <View style={styles.container}>
             <Image
                 style={styles.logo}
-                source={require('../assets/BeastModoLogo.png')} // Remplacez le chemin par le chemin réel de votre image
+                source={require('../assets/BeastModoLogo.png')}
             />
             <Text style={styles.title}>Wanna subscribe ? Got ya !</Text>
             <TextInput style={styles.inputs} label='First Name' placeholder='Your first name' />
