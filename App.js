@@ -3,8 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import Button_Component from './components/Button_Component';
 import State_Component from './components/State_Component';
 import List_Component from './components/List_Component';
-// import Home_screen from './screen/home_screen';
+// import Home_screen from './screen/Home_screen';
 import Formular_Component from './components/Formular_Component';
+import Connect_Formular from './screen/Connect_Formular';
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
       <State_Component />
       <Button_Component />
       <List_Component />
-      <Formular_Component />
+      {/* <Formular_Component /> */}
+      <Connect_Formular />
       <StatusBar style="auto" />
     </View>
   );
